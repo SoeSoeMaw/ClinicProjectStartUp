@@ -116,7 +116,7 @@
 
                     </dxg:GridControl.Columns>
                     <dxg:GridControl.View>
-                        <dxg:TableView AllowEditing="True"
+                        <dxg:TableView AllowEditing="False"
                                        Name="gc_booking_patient_tbl"
                                        ShowGroupPanel="False"
                                        ShowSearchPanelMode="Always"
