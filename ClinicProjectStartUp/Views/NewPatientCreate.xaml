@@ -1,0 +1,230 @@
+﻿<dx:ThemedWindow x:Class="ClinicProjectStartUp.Views.NewPatientCreate"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+                 Title="New Patient Create Form"
+                 Height="600"
+                 Width="1050"
+                 ResizeMode="NoResize"
+                 WindowStartupLocation="CenterScreen"
+                 Loaded="ThemedWindow_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Select Patient's List Filters:"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Margin="0,4,5.2,3.2"
+               FontSize="14"
+               FontWeight="Bold"
+               FontFamily="Zawgyi-One" />
+        <Label Content="Patient's Name:"
+               Grid.Row="1"
+               Grid.Column="0"
+               Margin="0,3.8,5.4,4" />
+        <TextBox Name="patientname"
+                 Grid.Row="1"
+                 Width="290"
+                 HorizontalAlignment="Left"
+                 Margin="0.6,3.8,0,3"
+                 Grid.Column="1" />
+
+        <Label Content="Patient's Address :"
+               Grid.Row="2"
+               Grid.Column="0"
+               Margin="0,3,5.4,2.8" />
+        <TextBox Name="address"
+                 Grid.Row="2"
+                 Width="290"
+                 HorizontalAlignment="Left"
+                 Margin="0.6,3,0,2.8"
+                 Grid.Column="1" />
+        <Label Content="Patient's Phone Number :"
+               Grid.Row="3"
+               Grid.Column="0"
+               RenderTransformOrigin="0.421,1.842"
+               Margin="1,3.2,26.4,2.6" />
+        <TextBox Grid.Column="1"
+                 Grid.Row="3"
+                 x:Name="phoneno"
+                 Width="290"
+                 Height="30"
+                 Margin="1.6,3.2,9.6,0"
+                 VerticalAlignment="Top" />
+        <Label Content="Marital Status :"
+               Grid.Row="4"
+               Grid.Column="0"
+               RenderTransformOrigin="0.421,1.842"
+               Margin="1,3.4,26.4,3.4" />
+        <ComboBox Grid.Column="1"
+                  Grid.Row="4"
+                  x:Name="combo_marital_status"
+                  SelectedIndex="0"
+                  IsEditable="True"
+                  Width="290"
+                  Height="35"></ComboBox>
+        <Label Content="Patien's Age :"
+               Grid.Row="5"
+               Grid.Column="0"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <TextBox Grid.Row="5"
+                 Grid.Column="1"
+                 x:Name="age"
+                 Height="30"
+                 Width="290" />
+        <Label Content="Date :"
+               Grid.Row="6"
+               Grid.Column="0"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <DatePicker Name="dtpDate"
+                    Grid.Row="6"
+                    Width="300"
+                    HorizontalAlignment="Left"
+                    Margin="0,3.4,-34.4,2.8"
+                    Grid.Column="1" />
+        <Label Content="Service Charges :"
+               Grid.Row="7"
+               Grid.Column="0"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+       
+        <TextBox Grid.Row="7"
+                 Grid.Column="1"
+                 x:Name="servicecharges"
+                 Height="30"
+                 Width="290" />
+        <Label Content="Doctor Name :"
+               Grid.Row="1"
+               Grid.Column="3"
+               Margin="1.4,2.8,27.4,3" />
+        <ComboBox Grid.Column="4"
+                  Grid.Row="1"
+                  x:Name="combo_doctor_name"
+                  SelectedIndex="0"
+                  IsEditable="True"
+                  Width="290"
+                  Height="35"></ComboBox>
+
+        <!--<Label Content="Patien's Age :"
+               Grid.Row="2"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <TextBox Grid.Row="2"
+                 Grid.Column="4"
+                 x:Name="age"
+                 Height="30"
+                 Width="290" />-->
+        <Label Content="Patient's Health Status :"
+               Grid.Row="2"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+
+        </Label>
+        <TextBox Grid.Row="2"
+                 Grid.Column="4"
+                 x:Name="healthstatus"
+                 Height="30"
+                 Width="290" />
+        <Label Content="Patient's Gender :"
+               Grid.Row="3"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+            
+        </Label>
+        <ComboBox Grid.Column="4"
+                  Grid.Row="3"
+                  x:Name="combo_gender"
+                  SelectedIndex="0"
+                  IsEditable="True"
+                  Width="290"
+                  Height="35"></ComboBox>
+        <Label Content="Refer By :"
+               Grid.Row="4"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <CheckBox Grid.Row="4"
+                  Name="refercheck"
+                  Grid.Column="4"
+                  Checked="refercheck_Checked">
+            Is Refer
+        </CheckBox>
+        <Label Content="Enter Refer By Doctor's Name:"
+              
+               Grid.Row="5"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <TextBox Grid.Row="5"
+                 Grid.Column="4"
+                 IsEnabled="False"
+                 x:Name="referdoctor"
+                 Height="30"
+                 Width="290" />
+        <Label Content="Enter Refer By Doctor's Address:"
+               Grid.Row="6"
+              
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <TextBox Grid.Row="6"
+                 Grid.Column="4"
+                 IsEnabled="False"
+                 x:Name="referdaddress"
+                 Height="30"
+                 Width="290" />
+        <Label Content="Refer Doctor's Remark:"
+               Grid.Row="7"
+              
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <TextBox Grid.Row="7"
+                 Grid.Column="4"
+                 x:Name="referremark"
+                 Height="30"
+                 IsEnabled="False"
+                 Width="290" />
+        <Button Name="btnFilterPatient"
+                Content="Filter"
+                Grid.Column="1"
+                Grid.Row="8"
+                Width="100"
+                HorizontalAlignment="Right"
+                Margin="0,1.6,156.8,5.2"
+                Click="btnFilterPatient_Click"
+                Grid.ColumnSpan="3" />
+
+    </Grid>
+</dx:ThemedWindow>

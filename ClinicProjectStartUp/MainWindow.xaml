@@ -1,0 +1,24 @@
+﻿<dx:ThemedWindow
+    x:Class="ClinicProjectStartUp.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:local="clr-namespace:ClinicProjectStartUp"
+                 xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+                 xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+                 xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+                 xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+                 xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduling"
+                 xmlns:dxo="http://schemas.devexpress.com/winfx/2008/xaml/office"
+                 xmlns:dxnb="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
+                 xmlns:Views="clr-namespace:ClinicProjectStartUp.Views"
+                 Title="Clinic Project "
+                 Width="1377"
+                 Height="727"
+                 WindowStartupLocation="CenterScreen"
+                 WindowState="Maximized"
+                 SnapsToDevicePixels="True"
+                 UseLayoutRounding="True"
+                 >
+    <Views:Main></Views:Main>
+   
+</dx:ThemedWindow>
