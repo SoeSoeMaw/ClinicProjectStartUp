@@ -11,7 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DevExpress.Xpf.Core;
-
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace ClinicProjectStartUp.Views
 {
@@ -60,6 +61,28 @@ namespace ClinicProjectStartUp.Views
             //save data from show dialog
             status_ok = true;
             this.Close();
+
+            MySqlConnectionStringBuilder conn_string = new MySqlConnectionStringBuilder();
+            conn_string.Server = "127.0.0.1";
+            conn_string.Port = 3307;
+            conn_string.UserID = "root";
+            conn_string.Password = "root";
+            conn_string.Database = "clinicdb";
+            MySqlConnection connection = new MySqlConnection(conn_string.ConnectionString);
+
+            MySqlConnection MyCon = new MySqlConnection(conn_string.ToString());
+
+            try
+            {
+                MyCon.Open();
+                MessageBox.Show("Open");
+                MyCon.Close();
+                MessageBox.Show("Close");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
 
 

@@ -182,3 +182,7 @@ C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Clini
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\ClinicProjectStartUp.csproj.GenerateResource.Cache
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\ClinicProjectStartUp.exe.licenses
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\ru-RU\ClinicProjectStartUp.resources.dll
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\Google.Protobuf.dll
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\MySql.Data.dll
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\Google.Protobuf.xml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\MySql.Data.xml
