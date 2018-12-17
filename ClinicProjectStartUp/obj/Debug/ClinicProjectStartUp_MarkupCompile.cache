@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\App.xaml
-6233851033
+13-1641843114
 881864086068
-15-1342758477
+22-1691390149
 381127318722
-MainWindow.xaml;Views\BookingPatientView.xaml;Views\Main.xaml;Views\NewPatientCreate.xaml;Views\NormaleCustomerView.xaml;Views\PatientListFilter.xaml;
+MainWindow.xaml;Views\AddDoctorView.xaml;Views\AddPatientHistory.xaml;Views\AddReferByDoctorView.xaml;Views\BookingPatientCreateView.xaml;Views\BookingPatientView.xaml;Views\DoctorInformationView.xaml;Views\Main.xaml;Views\NewPatientCreate.xaml;Views\NormaleCustomerView.xaml;Views\PatientListFilter.xaml;Views\ReferByDoctorView.xaml;Views\ViewPatientHistory.xaml;
 
 False
 

@@ -20,6 +20,7 @@
             <RowDefinition Height="35"></RowDefinition>
             <RowDefinition Height="35"></RowDefinition>
             <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"></ColumnDefinition>
@@ -28,7 +29,7 @@
             <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition Width="300"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="Select Patient's List Filters:"
+        <Label Content="Create New Patient:"
                Grid.Row="0"
                Grid.Column="0"
                Grid.ColumnSpan="2"
@@ -80,7 +81,8 @@
                   SelectedIndex="0"
                   IsEditable="True"
                   Width="290"
-                  Height="35"></ComboBox>
+                  Height="35"
+                  Margin="2.2,2.4,8.6,2.4"></ComboBox>
         <Label Content="Patien's Age :"
                Grid.Row="5"
                Grid.Column="0"
@@ -88,10 +90,12 @@
                RenderTransformOrigin="0.5,0.5">
         </Label>
         <TextBox Grid.Row="5"
+               
                  Grid.Column="1"
                  x:Name="age"
                  Height="30"
-                 Width="290" />
+                 Width="290"
+                 Margin="2.2,5.6,8.6,5.2" />
         <Label Content="Date :"
                Grid.Row="6"
                Grid.Column="0"
@@ -217,9 +221,9 @@
                  IsEnabled="False"
                  Width="290" />
         <Button Name="btnFilterPatient"
-                Content="Filter"
+                Content="Create Patient"
                 Grid.Column="1"
-                Grid.Row="8"
+                Grid.Row="9"
                 Width="100"
                 HorizontalAlignment="Right"
                 Margin="0,1.6,156.8,5.2"

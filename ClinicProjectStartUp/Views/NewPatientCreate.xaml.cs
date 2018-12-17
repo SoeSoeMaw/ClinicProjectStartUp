@@ -13,6 +13,7 @@ using System.Windows.Shapes;
 using DevExpress.Xpf.Core;
 using MySql.Data.MySqlClient;
 using System.Data;
+using ClinicProjectStartUp.Common;
 
 namespace ClinicProjectStartUp.Views
 {
@@ -35,8 +36,27 @@ namespace ClinicProjectStartUp.Views
         private void PrepareData()
         {
             dtpDate.SelectedDate = DateTime.Now;
-            combo_doctor_name.Items.Add("Zaw Zaw");
-            combo_doctor_name.Items.Add("Mg Mg");
+            //MySqlConnection MyCon = WsApplication.ConnectionString();
+
+            //try
+            //{
+            //    MyCon.Open();
+            //    MySqlCommand cmd = MyCon.CreateCommand();
+            //    cmd.CommandText = "select id,doctorName from doctor ";
+            //    MessageBox.Show("OPen");
+            //    MySqlDataReader reader = cmd.ExecuteReader();
+            //    combo_doctor_name.ItemsSource = reader;
+            //    combo_doctor_name.SelectedValuePath = "id";
+            //    combo_doctor_name.DisplayMemberPath = "doctorName";
+            //    MyCon.Close();
+               
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            combo_doctor_name.Items.Add(1);
+            combo_doctor_name.Items.Add(2);
             combo_marital_status.Items.Add("Single");
             combo_marital_status.Items.Add("Marriage");
             combo_gender.Items.Add("Male");
@@ -54,30 +74,40 @@ namespace ClinicProjectStartUp.Views
         private void btnFilterPatient_Click(object sender, RoutedEventArgs e)
         {
             string pname = patientname.Text;
-            string pddress = address.Text;
+            string paddress = address.Text;
             string phone = phoneno.Text;
-            string page = age.Text;
-            string health = healthstatus.Text;
-            //save data from show dialog
+            int page = Int32.Parse(age.Text);
+            string m_status = combo_marital_status.SelectedValue.ToString();
+            string h_status = healthstatus.Text;
+            string d_id = combo_doctor_name.SelectedValue.ToString();
+            Decimal scharges =Decimal.Parse(servicecharges.Text);
+            string pstatus = "Normal";
+            decimal tamt = 0;
             status_ok = true;
             this.Close();
-
-            MySqlConnectionStringBuilder conn_string = new MySqlConnectionStringBuilder();
-            conn_string.Server = "127.0.0.1";
-            conn_string.Port = 3307;
-            conn_string.UserID = "root";
-            conn_string.Password = "root";
-            conn_string.Database = "clinicdb";
-            MySqlConnection connection = new MySqlConnection(conn_string.ConnectionString);
-
-            MySqlConnection MyCon = new MySqlConnection(conn_string.ToString());
-
+            MySqlConnection MyCon = WsApplication.ConnectionString();
             try
             {
                 MyCon.Open();
-                MessageBox.Show("Open");
+                MySqlCommand cmd = MyCon.CreateCommand();
+                cmd.CommandText = "insert into patient(name,address,phone,doctor_id,age,m_status,health_status,service_charges,p_status,total_amount,active,is_delete,ts) values('"+pname+"','"+paddress+"','"+phone+"','"+d_id + "','"+page + "','"+m_status + "','"+h_status + "','"+ scharges + "','"+pstatus + "','"+tamt + "','"+1+ "','"+0 + "','" + DateTime.Now.ToString("yyyy-MM-dd 00:00:00") + "');"; 
+                MySqlDataReader reader = cmd.ExecuteReader();
                 MyCon.Close();
-                MessageBox.Show("Close");
+                if (refercheck.IsChecked == true)
+                {
+                    string refname = referdoctor.Text;
+                    string refaddress = referdaddress.Text;
+                    string refremark = referremark.Text;
+                    int copoint = 1;
+                    string s = "";
+                    MyCon.Open();
+                    MySqlCommand cmd1 = MyCon.CreateCommand();
+                    cmd1.CommandText = "insert into refer_doctor(name,address,remark,count_point,active,is_delete,ts,refer_doctorcol) values('" + refname + "','" + refaddress + "','" + refremark  + "','" + copoint + "','" + 1 + "','" + 0 + "','" + DateTime.Now.ToString("yyyy-MM-dd 00:00:00") +"','"+s+ "');";
+                    MySqlDataReader reader1 = cmd1.ExecuteReader();
+                    MyCon.Close();
+
+                }
+                
             }
             catch (Exception ex)
             {

@@ -186,3 +186,17 @@ C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\Googl
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\MySql.Data.dll
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\Google.Protobuf.xml
 C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\bin\Debug\MySql.Data.xml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\AddPatientHistory.baml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\AddPatientHistory.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\ViewPatientHistory.baml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\ViewPatientHistory.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\AddDoctorView.baml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\AddDoctorView.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\BookingPatientCreateView.baml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\BookingPatientCreateView.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\DoctorInformationView.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\DoctorInformationView.baml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\AddReferByDoctorView.baml
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\AddReferByDoctorView.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\ReferByDoctorView.g.cs
+C:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\obj\Debug\Views\ReferByDoctorView.baml

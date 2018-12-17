@@ -56,6 +56,14 @@ namespace ClinicProjectStartUp.Views
             {
                 navframe.Navigate("NormaleCustomerView");
             }
+            else if (e.NewItem.Content.ToString() == "Doctor Lists")
+            {
+                navframe.Navigate("DoctorInformationView");
+            }
+            else if (e.NewItem.Content.ToString() == "Refer Doctor Lists")
+            {
+                navframe.Navigate("ReferByDoctorView");
+            }
         }
 
         private void RibbonControl_Loaded(object sender, RoutedEventArgs e)

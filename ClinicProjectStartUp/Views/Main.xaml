@@ -66,7 +66,7 @@
                            x:Name="navbar"
                            AllowSelectDisabledItem="False"
                            DockPanel.Dock="Left"
-                           Margin="0,0.2,0,0">
+                           Margin="0,0.4,0,1">
             
             <dxn:NavBarGroup x:Name="NormalPatientList"
                              Header="Normal Patients List"
@@ -86,6 +86,24 @@
                                 Content="Booking Patients"
                                 DisplayMode="ImageAndText"
                                 ImageSource="{dx:DXImage Image=BOResume_16x16.png}" />
+            </dxn:NavBarGroup>
+            <dxn:NavBarGroup x:Name="DoctorInformation"
+                             Header="Doctor Information Lists"
+                             DisplayMode="ImageAndText"
+                             ImageSource="{dx:DXImage Image=BOCustomer_32x32.png}">
+                <dxn:NavBarItem x:Name="DoctorList"
+                                Content="Doctor Lists"
+                                DisplayMode="ImageAndText"
+                                ImageSource="{dx:DXImage Image=BOCustomer_16x16.png}" />
+            </dxn:NavBarGroup>
+            <dxn:NavBarGroup x:Name="ReferDoctorInformation"
+                             Header="Refer Doctor Information Lists"
+                             DisplayMode="ImageAndText"
+                             ImageSource="{dx:DXImage Image=BOCustomer_32x32.png}">
+                <dxn:NavBarItem x:Name="ReferDoctorList"
+                                Content="Refer Doctor Lists"
+                                DisplayMode="ImageAndText"
+                                ImageSource="{dx:DXImage Image=BOCustomer_16x16.png}" />
             </dxn:NavBarGroup>
 
         </dxn:NavBarControl>

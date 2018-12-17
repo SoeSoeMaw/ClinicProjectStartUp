@@ -94,6 +94,11 @@
                                                ItemClick="filter_patient_ItemClick"
                                                Glyph="{dx:DXImage Image=FilterByArgument_Pie_16x16.png}"
                                                LargeGlyph="{dx:DXImage Image=FilterByArgument_Pie_32x32.png}" />
+                            <dxb:BarButtonItem Content="Add Doctor Information"
+                                               Name="Add_Doctor"
+                                               Glyph="{dx:DXImage Image=BOCustomer_32x32.png}"
+                                               LargeGlyph="{dx:DXImage Image=BOCustomer_32x32.png}"
+                                               ItemClick="Add_Doctor_ItemClick" />
                         </dxr:RibbonPageGroup>
 
                     </dxr:RibbonPage>
@@ -116,6 +121,9 @@
                                  IsEnabled="True">
                     <dxg:GridControl.Columns>
                         <dxg:GridColumn IsSmart="True"
+                                        Header="Patient ID"
+                                        FieldName="id" />
+                        <dxg:GridColumn IsSmart="True"
                                         Header="Patient Name"
                                         FieldName="name" />
                         <dxg:GridColumn IsSmart="True"
@@ -132,10 +140,10 @@
                                         FieldName="health_status" />
                         <dxg:GridColumn IsSmart="True"
                                         Header="Patient's Current Status"
-                                        FieldName="status" />
+                                        FieldName="p_status" />
                         <dxg:GridColumn IsSmart="True"
                                         Header="Check Doctor"
-                                        FieldName="doctorname" />
+                                        FieldName="doctorName" />
                         <dxg:GridColumn IsSmart="True"
                                         Header="Refer By (Doctor Name)"
                                         FieldName="refer_by_name" />

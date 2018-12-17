@@ -1,0 +1,181 @@
+﻿<dx:ThemedWindow x:Class="ClinicProjectStartUp.Views.AddPatientHistory"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+                 Title="Add Patient History Form"
+                 Height="450"
+                 Width="1050"
+                 ResizeMode="NoResize"
+                 WindowStartupLocation="CenterScreen"
+                 Loaded="ThemedWindow_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Create New Patient History:"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+               Margin="0,4,5.2,3.2"
+               FontSize="14"
+               FontWeight="Bold"
+               FontFamily="Zawgyi-One" />
+        <Label Content="Patient's Name:"
+               Grid.Row="1"
+               Grid.Column="0"
+               Margin="0,3.8,5.4,4" />
+        <TextBox Name="patientname"
+                 Grid.Row="1"
+                 Width="290"
+                 HorizontalAlignment="Left"
+                 Margin="0.6,3.8,0,3"
+                 Grid.Column="1" />
+
+        <Label Content="Patient's History Status :"
+               Grid.Row="2"
+               Grid.Column="0"
+               Margin="0,3,5.4,2.8" />
+        <TextBox Name="history_status"
+                 Grid.Row="2"
+                 Width="290"
+                 HorizontalAlignment="Left"
+                 Margin="0.6,3,0,2.8"
+                 Grid.Column="1" />
+        <Label Content="Patient's Medical Fee :"
+               Grid.Row="3"
+               Grid.Column="0"
+               RenderTransformOrigin="0.421,1.842"
+               Margin="1,3.2,26.4,2.6" />
+        <TextBox Grid.Column="1"
+                 Grid.Row="3"
+                 x:Name="history_amount"
+                 Width="290"
+                 Height="30"
+                 Margin="1.6,3.2,9.6,0"
+                 VerticalAlignment="Top" />
+        <Label Content="Doctor' Fee :"
+               Grid.Row="4"
+               Grid.Column="0"
+               RenderTransformOrigin="0.421,1.842"
+               Margin="1,3.4,26.4,3.4" />
+        <TextBox Grid.Column="1"
+                 Grid.Row="4"
+                 x:Name="doctor_fee"
+                 Width="290"
+                 Height="35"
+                 Margin="2.2,2.4,8.6,2.4"></TextBox>
+
+        <Label Content="Appointment Date :"
+               Grid.Row="5"
+               Grid.Column="0"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <DatePicker Name="dtpDate"
+                    Grid.Row="5"
+                    Width="300"
+                    HorizontalAlignment="Left"
+                    Margin="0,3.4,-34.4,2.8"
+                    Grid.Column="1" />
+        <Label Content="Doctor Name :"
+               Grid.Row="1"
+               Grid.Column="3"
+               Margin="1.4,2.8,27.4,3" />
+        <ComboBox Grid.Column="4"
+                  Grid.Row="1"
+                  x:Name="combo_doctor_name"
+                  SelectedIndex="0"
+                  IsEditable="True"
+                  Width="290"
+                  Height="35"></ComboBox>
+
+        <!--<Label Content="Patien's Age :"
+               Grid.Row="2"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <TextBox Grid.Row="2"
+                 Grid.Column="4"
+                 x:Name="age"
+                 Height="30"
+                 Width="290" />-->
+        <Label Content="Service Charges :"
+               Grid.Row="2"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+
+        </Label>
+        <TextBox Grid.Row="2"
+                 Grid.Column="4"
+                 x:Name="servicecharges"
+                 Height="30"
+                 Width="290" />
+        <Label Content="Tax :"
+               Grid.Row="3"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+
+        </Label>
+        <TextBox Grid.Column="4"
+                 Grid.Row="3"
+                 x:Name="tax"
+                 Width="290"
+                 Height="35"></TextBox>
+        <Label Content="HandOver By :"
+               Grid.Row="4"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <CheckBox Grid.Row="4"
+                  Name="handovercheck"
+                  Grid.Column="4"
+                  Checked="handovercheck_Checked">
+            Is HandOver
+        </CheckBox>
+        <Label Content="HandOver Doctor's Name:"
+               Grid.Row="5"
+               Grid.Column="3"
+               Margin="1,3,2.8,2.8"
+               RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <ComboBox Grid.Row="5"
+                  Grid.Column="4"
+                  IsEditable="True"
+                  SelectedIndex="0"
+                  x:Name="combo_handover_doctor"
+                  Height="30"
+                  Width="290" />
+
+        <Button Name="btnCreateHistory"
+                Content="Create Patients' History"
+                Grid.Column="1"
+                Grid.Row="7"
+                Width="152"
+                HorizontalAlignment="Right"
+                Margin="0,4.8,126.8,2.2"
+                Grid.ColumnSpan="3"
+                Click="btnCreateHistory_Click" />
+
+    </Grid>
+</dx:ThemedWindow>

@@ -60,8 +60,8 @@
                         <dxr:RibbonPageGroup Caption="Patient's Actions List">
                             <dxb:BarButtonItem Content="Create Booking Patient"
                                                Name="Create_Booking_Patient"
-                                               LargeGlyph="{dx:DXImage Image=AddFile_32x32.png}"
-                                               Glyph="{dx:DXImage Image=AddFile_16x16.png}"
+                                               LargeGlyph="{dx:DXImage Image=GroupByDate_32x32.png}"
+                                               Glyph="{dx:DXImage Image=GroupByDate_32x32.png}"
                                                ItemClick="Create_Booking_Patient_ItemClick" />
                             <dxb:BarButtonItem Content="Cancel Booking Patient"
                                                Name="Cancel_Booking"

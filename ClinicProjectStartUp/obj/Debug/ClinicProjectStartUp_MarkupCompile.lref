@@ -3,4 +3,6 @@
 FC:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\MainWindow.xaml;;
 FC:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\Views\BookingPatientView.xaml;;
 FC:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\Views\NormaleCustomerView.xaml;;
+FC:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\Views\DoctorInformationView.xaml;;
+FC:\ClinicWindowProject\ClinicProjectStartUp\ClinicProjectStartUp\Views\ReferByDoctorView.xaml;;
 
